@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Bootstrap</title>
+    <link href="bootstrap.min.css" rel="stylesheet"></link>
+
+    <style>
+        /* color de fondo degradado */
+        body{
+            background: #ffaaaa;
+            background: linear-gradient(to right, #ffa751, #ffaaaa);
+        }
+        .bg{
+            background-image: url(imagenes/sesion2.jpg);
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <!-- responsive -->
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+            </div>
+
+            <!--Comienza el contenido-->
+            <div class="col bg-white p-5 rounded-end">
+
+                <!--Crear capa-->
+                <div class="text-end">
+                    <img src="imagenes/logo.PNG" width="100" alt="">
+                </div>
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+
+                <!--LOGIN-->
+                <form action="#">
+                    <div class="md-4">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="md-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="md-4 form-check">
+                        <input type="checkbox" name="conecxion" class="form-check-input" id="">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+
+                    <div class="d-gri">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span>¿No tienes cuenta? <a href="registrar.html">Regístrate</a></span><br>
+                        <span><a href="#">Recuperar Contraseña</a></span>
+                    </div>
+                </form>
+
+                <!--Login con redes sociales-->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión</div>
+                    </div>
+                    <div class="row">
+                        <!--con Facebook-->
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="imagenes/facebook.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- con Google -->
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="imagenes/google.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 text-center col-md-10">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

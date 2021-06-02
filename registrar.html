@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Bootstrap</title>
+    <link href="bootstrap.min.css" rel="stylesheet"></link>
+
+    <style>
+        /* color de fondo degradado */
+        body{
+            background: #834a4a;
+            background: linear-gradient(to right, #e0bf9e, #834a4a);
+        }
+        .bg{
+            background-image: url(imagenes/logo.PNG);
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <!-- responsive -->
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+            </div>
+
+            <!--Comienza el contenido-->
+            <div class="col bg-white p-5 rounded-end">
+
+                <!--Crear capa-->
+                <div class="text-end">
+                    <img src="imagenes/logo.PNG" width="100" alt="">
+                </div>
+                <h2 class="fw-bold text-center py-5">Por favor registrate</h2>
+
+                <!--LOGIN-->
+                <form action="#">
+                    <div class="md-4">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="md-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="md-4">
+                        <label for="password" class="form-label">Confirma Tu Contraseña</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="md-4 form-check">
+                        <input type="checkbox" name="conecxion" class="form-check-input" id="">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+
+                    <div class="d-gri">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+                    <div class="my-3">
+                        <span>¿Tienes cuenta?<a href="index.html">Regresar</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
